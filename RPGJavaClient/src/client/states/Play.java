@@ -11,6 +11,7 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.maps.tiled.TiledMap;
+import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 
@@ -80,7 +81,7 @@ public class Play implements Screen {
 		up.setPlayMode(Animation.LOOP);
 		down.setPlayMode(Animation.LOOP);
 		
-		player = new Player(still, left, right, up, down);
+		player = new Player(still, left, right, up, down, (TiledMapTileLayer) map1.getLayers().get(1));
 		player.setPosition(64, 64);
 		
 		Gdx.input.setInputProcessor(player);
