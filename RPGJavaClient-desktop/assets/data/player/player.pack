@@ -1,0 +1,68 @@
+
+player sheet.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+still
+  rotate: false
+  xy: 0, 0
+  size: 31, 31
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+left
+  rotate: false
+  xy: 64, 0
+  size: 31, 31
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+left
+  rotate: false
+  xy: 96, 0
+  size: 31, 31
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+right
+  rotate: false
+  xy: 128, 0
+  size: 31, 31
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+right
+  rotate: false
+  xy: 160, 0
+  size: 31, 31
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+up
+  rotate: false
+  xy: 192, 0
+  size: 31, 31
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+up
+  rotate: false
+  xy: 224, 0
+  size: 31, 31
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+down
+  rotate: false
+  xy: 0, 0
+  size: 31, 31
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+down
+  rotate: false
+  xy: 32, 0
+  size: 31, 31
+  orig: 32, 32
+  offset: 0, 0
+  index: -1

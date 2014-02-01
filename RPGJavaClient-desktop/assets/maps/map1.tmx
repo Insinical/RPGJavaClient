@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="50" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="spawnx" value="3"/>
+  <property name="spawny" value="3"/>
+ </properties>
+ <tileset firstgid="1" name="Tileset" tilewidth="32" tileheight="32">
+  <image source="1.png" width="512" height="512"/>
+  <tile id="0">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="warpbasement" value="true"/>
+   </properties>
+  </tile>
+  <tile id="73">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="75">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="221">
+   <properties>
+    <property name="blocked" value="true"/>
+    <property name="sign" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="ground" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3PMREAIAwAsRpAV/07YmFAAHelkCH7f0ZEAjQ2luqOEw+76iYf/V9e/qhu+vkDAAAAAAAA4GYTPIhG1xAnAAA=
+  </data>
+ </layer>
+ <layer name="blocked" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3VQQ6DQAgF0HHZq5m5/9KzNCZdmIYhMDDAmP8TFrUp8LTq2Vo7UeVq18DR2uW/znTefj2OX/1/fh6rFM5BReLIeH54O7KehVqHplekxcuR/Y7y+l/t5PgMjlN9KjlGJemjNViNXufK4lgx36uP1DH6XrtPlGP2d9KdvO9B7R5VHdrAwfeJDhx8n+jAwfeJjoeB6hOxm6ZmZ1bZHw44Vjkss6s4rLMtyTJQsy2Bo44j896g5mfsDYfO0YMtKxz9Ubs6OlGSHtGGGQfn8TBFOziLZl6E4463Y1Wkz6vqlpnr+hZHxcBRK6veyShbfQEdVgr1ECcAAA==
+  </data>
+ </layer>
+ <layer name="atrritubutes" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3VSw6DMAwE0LDs1VDuv+Qs3VAJVY4Vf2I7aEbyolS1/aDA2Vo7UeVq18DR2uW/jjpvvx7HXf+fn8cqhXNQmXFkPD+8HVnPQqlD0ivS4uXIfkd5/a92cnwGx6k+lRyjmukjNViNXufK4lgx36vPrGP0vXSfKIf2d7M7ed+D0j2qOqSBg+8THTj4PtGBg+8THQ8D1SdiN0lpZ1bZHw44Vjkss6s4rLMtyTJQsy2Bo44j896g5mfsDYfM0YMtKxz9Ubs6OlEzPaINGgfn8TBFOziLZF6E4xdPx6pYHJUsmuv6FkfFwFErq97JKFt9AVhOR3EQJwAA
+  </data>
+ </layer>
+</map>
