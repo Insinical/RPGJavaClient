@@ -1,13 +1,11 @@
 /*	Thanks to dermetfan (http://www.youtube.com/dermetfan) for making a tutorial
- *	on creating a player and collision detection. Most of this is from him, but
- * 	taught me a lot about this stuff.
+ *	on creating a player and collision detection. Helped me create the player class.
  */
 
 package client.entity;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input.Keys;
-import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -15,7 +13,7 @@ import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer.Cell;
 import com.badlogic.gdx.math.Vector2;
 
-public class Player extends Sprite implements InputProcessor {
+public class Player extends Sprite {
 	private Vector2 direction = new Vector2();
 
 	private float speed = 60 * 2, animationTime = 0;
@@ -71,6 +69,24 @@ public class Player extends Sprite implements InputProcessor {
 			setY(oldY);
 			direction.y = 0;
 		}
+		
+		if(Gdx.input.isKeyPressed(Keys.W)) {
+			direction.y = speed;
+			animationTime = 0;
+		} else if(Gdx.input.isKeyPressed(Keys.A)) {
+			direction.x = -speed;
+			animationTime = 0;
+		} else if(Gdx.input.isKeyPressed(Keys.S)) {
+			direction.y = -speed;
+			animationTime = 0;
+		} else if(Gdx.input.isKeyPressed(Keys.D)) {
+			direction.x = speed;
+			animationTime = 0;
+		} else {
+			direction.x = 0;
+			direction.y = 0;
+			animationTime = 0;
+		}
 	}
 	
 	private boolean isCellBlocked(float x, float y) {
@@ -80,7 +96,7 @@ public class Player extends Sprite implements InputProcessor {
 	
 	public boolean blockedUp() {
 		for(float step = 0; step < getWidth(); step += blocked.getTileWidth() / 2)
-			if(isCellBlocked(getX() + step, getY() + getHeight()))
+			if(isCellBlocked(getX() + step, getY()))
 				return true;
 		return false;
 	}
@@ -120,81 +136,5 @@ public class Player extends Sprite implements InputProcessor {
 
 	public void setSpeed(float speed) {
 		this.speed = speed;
-	}
-
-	@Override
-	public boolean keyDown(int keycode) {
-		switch(keycode) {
-		case Keys.W:
-			direction.y = speed;
-			animationTime = 0;
-			break;
-		case Keys.A:
-			direction.x = -speed;
-			animationTime = 0;
-			break;
-		case Keys.S:
-			direction.y = -speed;
-			animationTime = 0;
-			break;
-		case Keys.D:
-			direction.x = speed;
-			animationTime = 0;
-			break;
-		}
-		return true;
-	}
-
-	@Override
-	public boolean keyUp(int keycode) {
-		switch(keycode) {
-		case Keys.W:
-			direction.y = 0;
-			animationTime = 0;
-			break;
-		case Keys.A:
-			direction.x = 0;
-			animationTime = 0;
-			break;
-		case Keys.S:
-			direction.y = 0;
-			animationTime = 0;
-			break;
-		case Keys.D:
-			direction.x = 0;
-			animationTime = 0;
-			break;
-		}
-		return true;
-	}
-
-	@Override
-	public boolean keyTyped(char character) {
-		return false;
-	}
-
-	@Override
-	public boolean touchDown(int screenX, int screenY, int pointer, int button) {
-		return false;
-	}
-
-	@Override
-	public boolean touchUp(int screenX, int screenY, int pointer, int button) {
-		return false;
-	}
-
-	@Override
-	public boolean touchDragged(int screenX, int screenY, int pointer) {
-		return false;
-	}
-
-	@Override
-	public boolean mouseMoved(int screenX, int screenY) {
-		return false;
-	}
-
-	@Override
-	public boolean scrolled(int amount) {
-		return false;
 	}
 }

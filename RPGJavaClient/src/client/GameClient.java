@@ -11,7 +11,7 @@ public class GameClient extends Game {
 	// global variables
 	public static String name = "Moon Engine";
 	public static String version = "v0.0.1";
-	public static BitmapFont font, font50, menuBtnFont, newsFont, loginFnt;
+	public static BitmapFont font, font18, font50, menuBtnFont, newsFont, loginFnt;
 	
 	// main menu objects
 	public static FileHandle newsHandle = new FileHandle("assets/data/news.txt");
@@ -27,6 +27,7 @@ public class GameClient extends Game {
 		setScreen(new SplashScreen());
 		
 		font = new BitmapFont(Gdx.files.internal("assets/data/fonts/font.fnt"), Gdx.files.internal("assets/data/fonts/font.png"), false);	
+		font18 = new BitmapFont(Gdx.files.internal("assets/data/fonts/font18.fnt"), Gdx.files.internal("assets/data/fonts/font18.png"), false);
 		font50 = new BitmapFont(Gdx.files.internal("assets/data/fonts/font50.fnt"), Gdx.files.internal("assets/data/fonts/font50.png"), false);
 		menuBtnFont = new BitmapFont(Gdx.files.internal("assets/data/fonts/menuBtnFont.fnt"), Gdx.files.internal("assets/data/fonts/menuBtnFont.png"), false);
 		newsFont = new BitmapFont(Gdx.files.internal("assets/data/fonts/newsFont.fnt"), Gdx.files.internal("assets/data/fonts/newsFont.png"), false);

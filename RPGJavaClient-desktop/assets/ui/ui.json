@@ -1,0 +1,22 @@
+{
+com.badlogic.gdx.graphics.g2d.BitmapFont: {
+	font: { file: assets/data/fonts/font.fnt },
+	font18: { file: assets/data/fonts/font18.fnt },
+	arial15: { file: assets/data/fonts/arial15.fnt }
+},
+com.badlogic.gdx.graphics.Color: {
+	white: { a: 1, b: 1, g: 1, r: 1 }
+},
+com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle: {
+    default: { titleFont: font18, background: default.background }
+},
+com.badlogic.gdx.scenes.scene2d.ui.CheckBox$CheckBoxStyle: {
+	default: { checkboxOn: checkbox.on, checkboxOff: checkbox.off, checkboxOver: checkbox.over, font: arial15, fontColor: white }
+},
+com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle: {
+	font18: { up: button.up, down: button.down, font: font18, pressedOffsetX: 1, pressedOffsetY: -1 },
+},
+com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle: {
+	font18: { font: font18 }
+}
+}
