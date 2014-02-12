@@ -1,0 +1,19 @@
+{
+com.badlogic.gdx.graphics.g2d.BitmapFont: {
+	font: { file: assets/data/fonts/font.fnt },
+	font18: { file: assets/data/fonts/font18.fnt },
+	arial15: { file: assets/data/fonts/arial15.fnt },
+	titleFnt: { file: assets/data/fonts/titleFnt.fnt }
+},
+com.badlogic.gdx.graphics.Color: {
+	white: { a: 1, b: 1, g: 1, r: 1 }
+},
+com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle: {
+	invWin: { titleFont: titleFnt, background: invWindow },
+	chaWin: { titleFont: titleFnt, background: chaWindow },
+	speWin: { titleFont: titleFnt, background: speWindow },
+	queWin: { titleFont: titleFnt, background: queWindow },
+	skiWin: { titleFont: titleFnt, background: skiWindow },
+	optWin: { titleFont: titleFnt, background: optWindow }
+}
+}

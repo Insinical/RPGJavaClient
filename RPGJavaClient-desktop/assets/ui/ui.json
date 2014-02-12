@@ -2,7 +2,10 @@
 com.badlogic.gdx.graphics.g2d.BitmapFont: {
 	font: { file: assets/data/fonts/font.fnt },
 	font18: { file: assets/data/fonts/font18.fnt },
-	arial15: { file: assets/data/fonts/arial15.fnt }
+	arial12: { file: assets/data/fonts/arial12.fnt },
+	arial15: { file: assets/data/fonts/arial15.fnt },
+	pixel13: { file: assets/data/fonts/pixel13.fnt },
+	pixel15: { file: assets/data/fonts/pixel15.fnt }
 },
 com.badlogic.gdx.graphics.Color: {
 	white: { a: 1, b: 1, g: 1, r: 1 }
@@ -11,12 +14,28 @@ com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle: {
     default: { titleFont: font18, background: default.background }
 },
 com.badlogic.gdx.scenes.scene2d.ui.CheckBox$CheckBoxStyle: {
-	default: { checkboxOn: checkbox.on, checkboxOff: checkbox.off, checkboxOver: checkbox.over, font: arial15, fontColor: white }
+	default: { checkboxOn: checkbox.on, checkboxOff: checkbox.off, checkboxOver: checkbox.over, font: font, fontColor: white }
+},
+com.badlogic.gdx.scenes.scene2d.ui.ScrollPane$ScrollPaneStyle: {
+default: { vScroll: default-scroll, hScrollKnob: default-round-large, background: default-rect, hScroll: default-scroll, vScrollKnob: default-round-large }
+},
+com.badlogic.gdx.scenes.scene2d.ui.SelectBox$SelectBoxStyle: {
+	default: {
+		font: arial12, background: default-select,
+		scrollStyle: default,
+		listStyle: { font: arial12, selection: default-select-selection }
+	}
+},
+com.badlogic.gdx.scenes.scene2d.ui.Slider$SliderStyle: {
+	default-horizontal: { background: default-slider, knob: default-knob }
 },
 com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle: {
 	font18: { up: button.up, down: button.down, font: font18, pressedOffsetX: 1, pressedOffsetY: -1 },
 },
 com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle: {
-	font18: { font: font18 }
+	font: { font: font },
+	font18: { font: font18 },
+	arial15: { font: arial15 },
+	pixel13: { font: pixel13 }
 }
 }

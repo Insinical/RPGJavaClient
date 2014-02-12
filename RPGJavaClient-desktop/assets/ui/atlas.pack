@@ -53,3 +53,58 @@ default.selection
   orig: 1, 1
   offset: 0, 0
   index: -1
+default-slider
+  rotate: false
+  xy: 87, 0
+  size: 8, 8
+  split: 2, 2, 2, 2
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+default-knob
+  rotate: false
+  xy: 96, 0
+  size: 9, 18
+  orig: 9, 18
+  offset: 0, 0
+  index: -1
+default-select
+  rotate: false
+  xy: 0, 26
+  size: 27, 20
+  split: 4, 14, 4, 4
+  orig: 27, 20
+  offset: 0, 0
+  index: -1
+default-select-selection
+  rotate: false
+  xy: 27, 26
+  size: 3, 3
+  split: 1, 1, 1, 1
+  orig: 3, 3
+  offset: 0, 0
+  index: -1
+default-scroll
+  rotate: false
+  xy: 0, 46
+  size: 20, 20
+  split: 2, 2, 2, 2
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+default-round-large
+  rotate: false
+  xy: 20, 46
+  size: 20, 20
+  split: 5, 5, 5, 4
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+default-rect
+  rotate: false
+  xy: 30, 26
+  size: 3, 3
+  split: 1, 1, 1, 1
+  orig: 3, 3
+  offset: 0, 0
+  index: -1
